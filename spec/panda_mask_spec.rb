@@ -1,6 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe "PandaMask" do
+describe "PandaMask tests with e-mail" do
 	it "mask basic e-mails" do
 		"Hello, please contact me at tom.yu@asdf-town.kitchen so we can chat off the system.".panda_mask.should == 'Hello, please contact me at [removed as it violates our terms of service] so we can chat off the system.'
 	end
@@ -59,5 +59,63 @@ describe "PandaMask" do
 
 	it "catches emails with parenthesis variation 3" do
 		"contact us at tommytcchan at asdf dot com now.".panda_mask.should == 'contact us at [removed as it violates our terms of service] now.'
+	end
+end
+
+describe "PandaMask tests with phone #" do
+	it "basic phone strip" do
+		"contact us at 4151233333 now.".panda_mask.should == 'contact us at [removed as it violates our terms of service] now.'
+	end
+
+	it "basic phone strip 2" do
+		"contact us at 415-123-3333 now.".panda_mask.should == 'contact us at [removed as it violates our terms of service] now.'
+	end
+
+	it "basic phone strip 2" do
+		"contact us at 415_123_3333 now.".panda_mask.should == 'contact us at [removed as it violates our terms of service] now.'
+	end
+
+	it "basic phone strip 3" do
+		"contact us at 1-415-123-3333 now.".panda_mask.should == 'contact us at [removed as it violates our terms of service] now.'
+	end
+
+	it "basic phone strip 4" do
+		"contact us at +1-415-123-3333 now.".panda_mask.should == 'contact us at [removed as it violates our terms of service] now.'
+	end
+
+	it "basic phone strip 2" do
+		"contact us at +415-123-3333 now.".panda_mask.should == 'contact us at [removed as it violates our terms of service] now.'
+	end
+
+	it "basic phone strip 2" do
+		"contact us at +4151233333 now.".panda_mask.should == 'contact us at [removed as it violates our terms of service] now.'
+	end
+
+	it "basic phone strip 2" do
+		"contact us at 415 123 3333 now.".panda_mask.should == 'contact us at [removed as it violates our terms of service] now.'
+	end
+
+	it "basic phone strip 2" do
+		"contact us at 415.123.3333 now.".panda_mask.should == 'contact us at [removed as it violates our terms of service] now.'
+	end
+
+	it "basic phone strip 2" do
+		"contact us at 1-41O-123-3333 now.".panda_mask.should == 'contact us at [removed as it violates our terms of service] now.'
+	end
+
+	it "basic phone strip 2" do
+		"contact us at 1-800-GOTRICE now.".panda_mask.should == 'contact us at [removed as it violates our terms of service] now.'
+	end
+
+	it "basic phone strip 2" do
+		"contact us at +1-800-GOTRICE now.".panda_mask.should == 'contact us at [removed as it violates our terms of service] now.'
+	end
+
+	it "basic phone strip 2" do
+		"contact us at 123-4567 now.".panda_mask.should == 'contact us at [removed as it violates our terms of service] now.'
+	end
+
+	it "basic phone with letter O" do
+		"contact us at 12O-4567 now.".panda_mask.should == 'contact us at [removed as it violates our terms of service] now.'
 	end
 end

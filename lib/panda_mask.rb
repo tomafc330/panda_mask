@@ -5,7 +5,10 @@ class String
 
 		rules = [
 			/[A-Za-z0-9._%+-]+\s*(\s*(\[|\()\s*at\s*(\]|\))\s*|\s*(\[|\()*@(\]|\))*\s*)\s*[A-Za-z0-9.-]+\s*(\[|\()*(\s*dot\s*|\.)(\]|\))*\s*[A-Za-z0-9]+/, #std email or any replacement with [at] or [dot]
-			/[A-Za-z0-9._%+-]+\s*at\s*[A-Za-z0-9.-]+\sdot\s*[A-Za-z0-9]+/ #no symbols (ie. ) tommytcchan at asdf dot com
+			/[A-Za-z0-9._%+-]+\s*at\s*[A-Za-z0-9.-]+\sdot\s*[A-Za-z0-9]+/, #no symbols (ie. ) tommytcchan at asdf dot com
+			/\+*[-_.\dO]{7,}/,
+			/\+*[\dO]{3,}.[\dO]{3,}.[\dO]{3,}/, #ie. 12O-4567
+			/\+*[-_.\dO]{3,}.[\dA-Z]{4,}/, #ie. +1-800-GOTRICE
 		]
 
 		rules.each do |rule|
