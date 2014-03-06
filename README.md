@@ -18,11 +18,11 @@ Usage
 =====
 
 ```
-		"contact us at tommytcchan [at] asf.com now".panda_mask # 'contact us at [removed as it violates our terms of service] now.'
+"contact us at tommytcchan [at] asf.com now".panda_mask # 'contact us at [removed as it violates our terms of service] now'
 ```
 
 ```
-		"contact us at 415.123.3333 now.".panda_mask('[removed]') # 'contact us at [removed] now.'
+"contact us at 415.123.3333 now".panda_mask('[removed]') # 'contact us at [removed] now'
 ```
 
 Why the name?
@@ -43,5 +43,5 @@ Contributing to panda_mask
 Copyright
 =========
 
-Copyright (c) 2014 Tommy Chan. See LICENSE.txt for
+Copyright (c) 2014 Tommy Chan and [VenueSpot]|(www.venuespot.co). See LICENSE.txt for
 further details.
