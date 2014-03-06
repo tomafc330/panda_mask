@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tommy Chan"]
   s.date = "2014-03-06"
-  s.description = "A gem for masking any contact information such as websites, phone numbers, and emails in a string"
+  s.description = "A gem for masking any contact information such as websites, phone numbers, and emails in a string."
   s.email = "tommytcchan@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.md",
@@ -31,6 +31,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/panda_mask.rb",
+    "panda_mask.gemspec",
     "spec/panda_mask_spec.rb",
     "spec/spec_helper.rb"
   ]
