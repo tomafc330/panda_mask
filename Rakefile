@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "panda_mask"
   gem.homepage = "http://github.com/tommytcchan/panda_mask"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A gem for masking any contact information such as websites, phone numbers, and emails in a string.}
+  gem.description = %Q{A gem for masking any contact information such as websites, phone numbers, and emails in a string.}
   gem.email = "tommytcchan@gmail.com"
   gem.authors = ["Tommy Chan"]
   # dependencies defined in Gemfile

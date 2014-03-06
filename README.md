@@ -1,6 +1,6 @@
 panda_mask
 ==========
-A gem for masking any contact information such as websites, phone numbers, and emails in a string. 
+A gem for masking any contact information -- phone numbers and emails -- in a string.
 
 Why?
 ====
@@ -13,6 +13,17 @@ Well, if you look at AirBnb's model, the claim is that they want to protect peop
 How it works
 ============
 We basically provide an extra method ```panda_mask``` on the ```string``` class that will strip all e-mails, phone numbers, and urls and replace it with ***.
+
+Usage
+=====
+
+```
+		"contact us at tommytcchan [at] asf.com now".panda_mask # 'contact us at [removed as it violates our terms of service] now.'
+```
+
+```
+		"contact us at 415.123.3333 now.".panda_mask('[removed]') # 'contact us at [removed] now.'
+```
 
 Why the name?
 =============
