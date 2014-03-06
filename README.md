@@ -12,7 +12,7 @@ Well, if you look at AirBnb's model, the claim is that they want to protect peop
 
 How it works
 ============
-We basically provide an extra method ```panda_mask``` that will strip all e-mails, phone numbers, and urls and replace it with ***.
+We basically provide an extra method ```panda_mask``` on the ```string``` class that will strip all e-mails, phone numbers, and urls and replace it with ***.
 
 Why the name?
 =============
