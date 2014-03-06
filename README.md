@@ -43,5 +43,5 @@ Contributing to panda_mask
 Copyright
 =========
 
-Copyright (c) 2014 Tommy Chan and [VenueSpot]|(www.venuespot.co). See LICENSE.txt for
+Copyright (c) 2014 Tommy Chan and www.venuespot.co. See LICENSE.txt for
 further details.
