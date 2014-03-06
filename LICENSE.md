@@ -1,3 +1,5 @@
+Copyright (c) 2014 Tommy Chan
+
 The MIT License (MIT)
 
 Copyright (c) {{{year}}} {{{fullname}}}
