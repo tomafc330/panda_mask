@@ -2,7 +2,7 @@ panda_mask
 ==========
 A gem for masking any contact information -- phone numbers and emails -- in a string.
 
-[![Gem Version](https://badge.fury.io/rb/panda_mask.png)](http://badge.fury.io/rb/panda_mask)
+[![Gem Version](https://badge.fury.io/rb/panda_mask.png)](http://badge.fury.io/rb/panda_mask) [![Coverage Status](https://coveralls.io/repos/tommytcchan/panda_mask/badge.png)](https://coveralls.io/r/tommytcchan/panda_mask)
 
 
 Why?
@@ -27,6 +27,8 @@ Usage
 ```
 "contact us at 415.123.3333 now".panda_mask('[removed]') # 'contact us at [removed] now'
 ```
+
+Please see the tests for the examples on what it strips out.
 
 Why the name?
 =============
