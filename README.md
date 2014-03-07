@@ -1,6 +1,8 @@
 panda_mask
 ==========
 A gem for masking any contact information -- phone numbers and emails -- in a string.
+[![Gem Version](https://badge.fury.io/rb/panda_mask.png)](http://badge.fury.io/rb/panda_mask)
+
 
 Why?
 ====
