@@ -1,4 +1,6 @@
 require 'simplecov'
+require 'coveralls'
+Coveralls.wear!
 
 module SimpleCov::Configuration
   def clean_filters
