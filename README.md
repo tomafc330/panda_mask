@@ -2,6 +2,9 @@ panda_mask
 ==========
 A gem for masking any contact information -- phone numbers and emails -- in a string.
 
+[![Gem Version](https://badge.fury.io/rb/panda_mask.png)](http://badge.fury.io/rb/panda_mask) [![Coverage Status](https://coveralls.io/repos/tommytcchan/panda_mask/badge.png)](https://coveralls.io/r/tommytcchan/panda_mask)
+
+
 Why?
 ====
 There is a need for us because we are building a marketplace where we want the interactions to occur in our system. Similar to AirBnb, we want to mask any sort of communication channels outside of the marketplace.
@@ -24,6 +27,8 @@ Usage
 ```
 "contact us at 415.123.3333 now".panda_mask('[removed]') # 'contact us at [removed] now'
 ```
+
+Please see the tests for the examples on what it strips out.
 
 Why the name?
 =============
